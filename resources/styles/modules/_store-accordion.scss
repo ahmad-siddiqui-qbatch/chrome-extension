@@ -1,0 +1,24 @@
+.stores{
+  .store-button{
+    display: flex;
+    align-items: center;
+    .brand-icon{
+      border: 1px solid $dark-100;
+      border-radius: $radius-lg;
+      object-fit: contain;
+    }
+    .button-text{
+      margin: 0;
+      color: $primary;
+      padding-left: $spacing-2;
+    }
+    &::after{
+      display: none;
+    }
+  }
+  .scores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

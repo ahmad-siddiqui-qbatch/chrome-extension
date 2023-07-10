@@ -1,0 +1,46 @@
+table {
+  thead {
+    tr {
+      th {
+        background-color: $primary;
+        color: $white;
+        padding: $spacing-2  $spacing-4;
+        &:first-child {
+          border-radius: $radius-xs 0 0 $radius-xs;
+        }
+        &:last-child {
+          border-radius: 0 $radius-xs $radius-xs 0;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $dark-100;
+      &:last-child {
+        border-bottom: 0;
+      }
+      td {
+        padding-top: $spacing-4;
+        padding-bottom: $spacing-4;
+        padding-right: 0;
+        min-width: 57px;
+        text-overflow: ellipsis;
+        max-width: 57px;
+        overflow: hidden;
+        white-space: nowrap;
+        img {
+          height: 16px;
+          width: 16px;
+          object-fit: cover;
+          margin-right: $spacing-2;
+        }
+      }
+    }
+  }
+  th,
+  td {
+    font-size: $font-body-1;
+    padding: $spacing-1 $spacing-4;
+  }
+}
