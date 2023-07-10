@@ -21,6 +21,7 @@ $dark-300: #c4c4c4;
 $dark-200: #adb4d2;
 $dark-100: #e1e1e1;
 $light: #e3e3e3;
+$light-100: #fafafa;
 
 $white: #fff;
 
@@ -28,10 +29,10 @@ $primary: #ff9900;
 $secondary: $dark-700;
 
 //Accent Colors
-$warning: #ee3224;
+$danger: #ee3224;
 $success: #44bf00;
 $info: $dark-400;
-$blue: #1565D8;
+$blue: #1565d8;
 
 //Spacings
 $spacing-0: 0px;
@@ -62,7 +63,7 @@ h2,
 }
 h3,
 .text-h3 {
-  font-size: $font-sm !important;
+  font-size: $font-sm;
   line-height: $font-lg;
   font-weight: $font-bold;
   margin-bottom: $spacing-2;
@@ -71,13 +72,13 @@ h3,
 .text-success {
   color: $success;
 }
-.text-primary{
-  color: $primary !important;
+.text-primary {
+  color: $primary;
 }
-.text-warning {
-  color: $warning !important;
+.text-danger {
+  color: $danger;
 }
-.text-blue{
+.text-blue {
   color: $blue;
 }
 .text-dark-400 {
@@ -86,21 +87,21 @@ h3,
 .border-bottm {
   border-color: rgba(225, 225, 225, 0.7);
 }
-span{
+span {
   margin-bottom: 0;
 }
-.border-top{
+.border-top {
   border-top: 1px solid $light;
 }
-.saperator{
+.saperator {
   height: 100%;
   width: 1px;
-  background-color:$dark-400;
+  background-color: $dark-400;
   height: 14px;
   display: block;
   margin: 0 $spacing-3;
 }
-.img-sm{
+.img-sm {
   height: 16px;
   width: 16px;
   object-fit: contain;

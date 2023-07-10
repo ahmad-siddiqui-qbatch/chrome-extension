@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: $spacing-4;
   padding-bottom: $spacing-4;
-  .input-label{
+  margin-bottom: $spacing-4;
+  & > .input-label{
     width: 48px;
   }
-  input, select{
+  & > input, & > select{
     width: 133px;
     height: 32px;
     font-size: $font-body-1;

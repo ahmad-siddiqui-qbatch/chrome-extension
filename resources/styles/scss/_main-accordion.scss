@@ -2,7 +2,7 @@
   padding-top: $spacing-4;
   .accordion-body {
     padding: 0;
-    background-color: #fafafa;
+    background-color: $light-100;
   }
   .accordion-item {
     border-left: 0;
@@ -11,6 +11,7 @@
     border-color: $dark-100;
   }
   .accordion-button {
+    background-color: $light-100;
     font-size: $font-md;
     font-weight: $font-bold;
     color: $dark-700;
@@ -35,26 +36,6 @@
 
     .extension-icon {
       margin-right: $spacing-4;
-    }
-  }
-  .inner-accordion {
-    border: none;
-    .accordion-item {
-      border: 0;
-    }
-    .accordion-button {
-      position: relative;
-      margin-bottom: 0;
-      color: $dark-400;
-      label,
-      span {
-        margin-bottom: 0;
-      }
-      &::after {
-        position: absolute;
-        left: 30%;
-        top: $spacing-7;
-      }
     }
   }
 }
