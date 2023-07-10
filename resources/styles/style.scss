@@ -1,0 +1,239 @@
+// font-family : 'Lato'
+// font-weights: 400, 700
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+//Font Sizes
+$font-lg: 16px;
+$font-md: 14px;
+$font-sm: 10px;
+$font-body-1: 12px;
+$font-body-2: $font-sm;
+$font-body-3: 9px;
+$font-label-1: $font-body-1;
+$font-label-2: $font-body-3;
+
+// Font Weights
+$font-bold: 700;
+$font-medium: 500;
+$font-regular: 400;
+
+// Theme Colors
+$dark-700: #000000;
+$dark-500: #272b41;
+$dark-400: #5a5f7d;
+$dark-300: #adb4d2;
+$dark-100: #e1e1e1;
+$white: #fff;
+
+$primary: #ff9900;
+$secondary: $dark-700;
+
+//Accent Colors
+$warning: #ee3224;
+$success: #44bf00;
+$info: $dark-400;
+
+//Spacings
+$spacing-0: 0px;
+$spacing-1: 2px;
+$spacing-2: 4px;
+$spacing-3: 6px;
+$spacing-4: 8px;
+$spacing-7: 14px;
+
+//Border Radius
+$radius-xs: 5px;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+.text-h1 {
+  font-size: $font-lg;
+  line-height: $font-lg;
+  font-weight: $font-bold;
+}
+h2,
+.text-h2 {
+  font-size: $font-md;
+  line-height: $font-lg;
+  font-weight: $font-bold;
+}
+h3,
+.text-h3 {
+  font-size: $font-sm !important;
+  line-height: $font-lg;
+  font-weight: $font-bold;
+  margin-bottom: $spacing-2;
+  color: $dark-700;
+}
+.text-success{
+  color: $success;
+}
+.text-warning{
+  color: $warning !important;
+}
+.text-dark-400{
+  color: $dark-400;
+}
+.border-top{
+  border-top: 1px solid rgba(225, 225, 225, 0.7);
+}
+//BOOTSTRAP OVERRIDES
+form{
+  label{
+    width: 50px;
+  }
+  .form-control, .form-select{
+    font-size: $font-body-1;
+    width: 133px;
+    margin-left: auto;
+    color: $dark-400;
+    &:focus{
+      box-shadow: none;
+      border-color: rgba(0,0,0,.125);
+      background-color: transparent;
+    }
+  }
+  .form-control{
+    padding-right: 20px;
+  }
+  .form-select{
+    --bs-form-select-bg-img : none;
+    position: relative;
+    background-image: url("../media/accordion-arrow.png");
+    background-size: 7.5px 4.5px;
+  }
+  .form-check {
+    .text-h3{
+      margin: $spacing-0;
+    }
+  }
+  .input-icon{
+    position: absolute;
+    right: 0;
+    height: 16px;
+    width: 8px;
+    top: 8px;
+    right: 8px;
+  }
+  .form-switch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: $spacing-4;
+    .switch-input{
+      right: 0;
+      top: $spacing-2;
+      position: absolute;
+    }
+  }
+}
+
+
+
+// MAIN STYLING
+    
+.extension {
+  width: 200px;
+  min-height: 206px;
+  border: 1px solid rgba(225, 225, 225, 0.7);
+  border-radius: 5px;
+  position: relative;
+  .extension-wrapper {
+    padding: $spacing-4;
+  }
+  img.extension-icon {
+      height: 16px;
+      width: 16px;
+    }
+}
+.extension-inner {
+  .product-img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+  }
+}
+
+.extension-accordion {
+  padding-top: $spacing-4;
+  .accordion-body{
+    padding: 0;
+  }
+  .accordion-item{
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px;
+    outline: none;
+    border-color: $dark-100;
+  }
+  .accordion-button {
+    font-size: $font-md;
+    font-weight: $font-bold;
+    display: flex;
+    align-items: center;
+    padding: $spacing-4 0;
+    &::after{
+      width: 10px;
+      height: 6px;
+      background-size: cover;
+      background-image: url('../media/accordion-arrow.png');
+    }
+    &:focus{
+      box-shadow: none;
+      border-color: rgba(0,0,0,.125);
+      background-color: transparent;
+    }
+    &:not(.collapsed){
+      box-shadow: none;
+      background-color: transparent;
+  }
+
+    .extension-icon{
+      margin-right: $spacing-4;
+    }
+  }
+  form {
+    label {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    .form-check{
+      padding-top: $spacing-4;
+      border-top: 1px solid rgba(225, 225, 225, 0.7);
+    }
+  }
+  .inner-accordion{
+    border: none;
+    .accordion-item{
+      border-top: 1px solid rgba(225, 225, 225, 0.7);
+      border-bottom: 0;
+    }
+    .accordion-button{
+      position: relative;
+      margin-bottom: 0;
+      color: $dark-400;
+      &::after{
+        position: absolute;
+        left: 30%;
+        top: $spacing-7;
+      }
+    }
+  }
+}
+
+
+
+
+.powered-by{
+  display: flex;
+  justify-content: end;
+  padding-top: $spacing-4;
+}

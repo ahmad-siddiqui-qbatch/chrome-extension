@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.text-h1 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+h2,
+.text-h2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+h3,
+.text-h3 {
+  font-size: 10px !important;
+  line-height: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #000000;
+}
+
+.text-success {
+  color: #44bf00;
+}
+
+.text-warning {
+  color: #ee3224 !important;
+}
+
+.text-dark-400 {
+  color: #5a5f7d;
+}
+
+.border-top {
+  border-top: 1px solid rgba(225, 225, 225, 0.7);
+}
+
+form label {
+  width: 50px;
+}
+form .form-control, form .form-select {
+  font-size: 12px;
+  width: 133px;
+  margin-left: auto;
+  color: #5a5f7d;
+}
+form .form-control:focus, form .form-select:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+  background-color: transparent;
+}
+form .form-control {
+  padding-right: 20px;
+}
+form .form-select {
+  --bs-form-select-bg-img: none;
+  position: relative;
+  background-image: url("../media/accordion-arrow.png");
+  background-size: 7.5px 4.5px;
+}
+form .form-check .text-h3 {
+  margin: 0px;
+}
+form .input-icon {
+  position: absolute;
+  right: 0;
+  height: 16px;
+  width: 8px;
+  top: 8px;
+  right: 8px;
+}
+form .form-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 8px;
+}
+form .form-switch .switch-input {
+  right: 0;
+  top: 4px;
+  position: absolute;
+}
+
+.extension {
+  width: 200px;
+  min-height: 206px;
+  border: 1px solid rgba(225, 225, 225, 0.7);
+  border-radius: 5px;
+  position: relative;
+}
+.extension .extension-wrapper {
+  padding: 8px;
+}
+.extension img.extension-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.extension-inner .product-img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.extension-accordion {
+  padding-top: 8px;
+}
+.extension-accordion .accordion-body {
+  padding: 0;
+}
+.extension-accordion .accordion-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0px;
+  outline: none;
+  border-color: #e1e1e1;
+}
+.extension-accordion .accordion-button {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.extension-accordion .accordion-button::after {
+  width: 10px;
+  height: 6px;
+  background-size: cover;
+  background-image: url("../media/accordion-arrow.png");
+}
+.extension-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+  background-color: transparent;
+}
+.extension-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+}
+.extension-accordion .accordion-button .extension-icon {
+  margin-right: 8px;
+}
+.extension-accordion form label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.extension-accordion form .form-check {
+  padding-top: 8px;
+  border-top: 1px solid rgba(225, 225, 225, 0.7);
+}
+.extension-accordion .inner-accordion {
+  border: none;
+}
+.extension-accordion .inner-accordion .accordion-item {
+  border-top: 1px solid rgba(225, 225, 225, 0.7);
+  border-bottom: 0;
+}
+.extension-accordion .inner-accordion .accordion-button {
+  position: relative;
+  margin-bottom: 0;
+  color: #5a5f7d;
+}
+.extension-accordion .inner-accordion .accordion-button::after {
+  position: absolute;
+  left: 30%;
+  top: 14px;
+}
+
+.powered-by {
+  display: flex;
+  justify-content: end;
+  padding-top: 8px;
+}/*# sourceMappingURL=style.css.map */
