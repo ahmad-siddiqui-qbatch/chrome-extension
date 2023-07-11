@@ -9,6 +9,9 @@
     border-right: 0;
     border-radius: 0px;
     border-color: $dark-100;
+    &:focus{
+      background-color: $light-100;
+    }
   }
   .accordion-button {
     background-color: $light-100;
@@ -27,13 +30,12 @@
     &:focus {
       box-shadow: none;
       border-color: rgba(0, 0, 0, 0.125);
-      background-color: transparent;
+      background-color: $light-100;
     }
     &:not(.collapsed) {
       box-shadow: none;
-      background-color: transparent;
+      background-color: $light-100;
     }
-
     .extension-icon {
       margin-right: $spacing-4;
     }

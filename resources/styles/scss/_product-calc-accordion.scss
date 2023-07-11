@@ -1,0 +1,16 @@
+.inner-accordion{
+  border-bottom: none;
+  .accordion-item{
+    border-bottom: 0;
+  }
+  .text-h3{
+    margin: 0;
+  }
+  .accordion-button{
+    &::after{
+      position: absolute;
+      left: 50px;
+      top: 14px;
+    }
+  }
+}

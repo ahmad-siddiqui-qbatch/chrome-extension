@@ -66,14 +66,14 @@ h3,
   font-size: $font-sm;
   line-height: $font-lg;
   font-weight: $font-bold;
-  margin-bottom: $spacing-2;
+  margin-bottom: 0;
   color: $dark-700;
 }
 .text-success {
   color: $success;
 }
 .text-primary {
-  color: $primary;
+  color: $primary !important;
 }
 .text-danger {
   color: $danger;

@@ -1,4 +1,7 @@
 .stores{
+  .accordion-item:last-child{
+    border-bottom: none;
+  }
   .store-button{
     display: flex;
     align-items: center;
@@ -14,6 +17,15 @@
     }
     &::after{
       display: none;
+    }
+  }
+  .store-accordion-inner{
+    padding: $spacing-4;
+    display: flex;
+    border-bottom: 1px solid $dark-100;
+    .inner-label{
+      display: flex;
+      font-size: $font-sm;
     }
   }
   .scores{
